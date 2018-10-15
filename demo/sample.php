@@ -16,8 +16,8 @@ add_action('wp_ajax_demo_api', 'demo_api');
 function demo_api()
 {
 	$url = $_POST['url'];
-    // $url = "https://jsonplaceholder.typicode.com/todos/1";
-        $result = file_get_contents($url);
+	// $url = "https://jsonplaceholder.typicode.com/todos/1";
+	$result = file_get_contents($url);
 	echo $result;
 	exit;
 }
