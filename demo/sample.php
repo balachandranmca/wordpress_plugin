@@ -17,7 +17,7 @@ function demo_api()
 {
 	$url = $_POST['url'];
     // $url = "https://jsonplaceholder.typicode.com/todos/1";
-    $result = file_get_contents($url);
+        $result = file_get_contents($url);
 	echo $result;
 	exit;
 }
